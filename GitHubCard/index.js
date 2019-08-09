@@ -116,7 +116,7 @@ function profileBox(object) {
   locationP.textContent = `Location: ${object.location}`;
 
   const profileP = document.createElement("p");
-  profileP.textContent = `Profile:`;
+  profileP.textContent = `Profile: `;
 
   const profileAnchor = document.createElement("a");
   profileAnchor.href = object.html_url;
