@@ -125,10 +125,10 @@ function profileBox(object) {
   profileP.appendChild(profileAnchor);
 
   const followersP = document.createElement("p");
-  followersP.textContent = object.followers;
-
+  followersP.textContent = 'Followers: ' + object.followers;
+  
   const followingP = document.createElement("p");
-  followingP.textContent = object.following;
+  followingP.textContent = 'Following: ' + object.following;
 
   const bioP = document.createElement("p");
   bioP.textContent = `Bio: ${object.bio}`;
@@ -138,7 +138,6 @@ function profileBox(object) {
   chartImg.style.width = "100%";
 
   
-
   cardInfoDiv.appendChild(nameH3);
   cardInfoDiv.appendChild(usernameP);
   cardInfoDiv.appendChild(locationP);
